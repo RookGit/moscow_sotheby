@@ -9,13 +9,44 @@
     font-style: normal;
 }
 
-* {
+*:not(.fa) {
     font-family: "Open Sans Regular" !important;
 }
 
-section {
+*:focus {
+    border: 0 !important;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: left;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.bg-1 {
     background-color: navajowhite;
 }
+
+.bg-2 {
+    background-color: #f5dbff;
+}
+
+.bg-3 {
+    background-color: #74ffa7;
+}
+
+
 
 /*Блок недвижимость {property}:*/
 .property {
@@ -29,7 +60,7 @@ section {
 
     position: absolute;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
 
     width: 390px;
     height: 250px;
@@ -39,25 +70,181 @@ section {
     padding-top: 29px;
     padding-left: 32px;
     padding-bottom: 25px;
+
+    transition: 0.5s;
+}
+
+.property-black:hover
+{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.property-black:hover .property-count_object
+{
+    display: none;
+}
+
+.property-black:hover .property-actions, .property-black:hover .property-countries
+{
+    display: block;
+}
+
+.property-countries {
+    display: none;
+    padding-right: 10px;
+    margin-top: 40px;
+}
+
+.property-countries a {
+    color: #CDCDCD;
+    margin-right: 10px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.property-countries a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .property-item {
     position: relative;
     left: 7px;
-    opacity: 0.7;
     margin: 7px;
     width: 390px;
     height: 250px;
 }
 
 .property-header {
+    display: block;
     line-height: 24px;
     font-size: 22px;
     font-weight: bold;
     color: white;
 }
 
+.property-actions {
+    display: none;
+    margin-top: 12px;
+    line-height: normal;
+    font-size: 21px;
+    height: 21px;
+    color: white;
+}
+.property-actions a {
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+.property-count_object {
+    position: relative;
+    top: 152px;
+    display: block;
+    line-height: 26px;
+    font-size: 13px;
+    color: white;
+}
+
+.property-count_object > span {
+    line-height: 26px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
 /*Форма какой вариант подходит Вам {option_fits}:*/
+
+.option_fits
+{
+    padding: 0px;
+    height: 539px;
+    background-color: #F2F2F2;
+}
+
+.option_fits-form {
+    position: relative;
+    bottom: 30px;
+    height: 509px;
+    width: 416px;
+    box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 53px 45px 71px;
+
+    /*padding-top: 53px;*/
+    /*padding-left: 45px;*/
+    /*padding-right: 45px;*/
+    /*padding-bottom: 71px;*/
+}
+
+.option_fits-more {
+    padding-top: 56px;
+    padding-left: 51px;
+
+}
+.option_fits-more h1 {
+    display: inline-block;
+    width: 460px;
+}
+
+.option_fits-more-link {
+    color: #747474;
+    font-style: italic;
+}
+
+.option_fits-more-link:hover {
+    color: #4c4c4c;
+    font-style: italic;
+}
+
+.option_fits-text {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 25px;
+    width: 568px;
+}
+
+.form_input {
+    width: 100%;
+    margin-top: 39px;
+    border: none;
+    font-size: 14px;
+    border-bottom: 1px solid #979797;
+}
+
+.form_input:focus {
+    border: none;
+}
+
+.form_submit {
+    color: white;
+    display: block;
+    background-color: #002349;
+    margin-top: 48px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+
+    transition: 0.3s;
+}
+.form_submit:hover
+{
+    color: white;
+    background-color: #001433;
+    text-decoration: none;
+}
+
+.form_text {
+    width: 100%;
+    margin-top: 25px;
+    color: #959595;
+    font-size: 12px;
+}
+
 
 /*Эксклюзивные объекты {exc_obj}:*/
 
