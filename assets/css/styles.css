@@ -17,6 +17,15 @@
     border: 0 !important;
 }
 
+.v_line {
+    display: inline-block;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    width: 1px;
+    height: 29px;
+    background-color: black;
+}
+
 h1 {
     font-weight: bold;
     font-size: 30px;
@@ -30,8 +39,19 @@ h3 {
     line-height: 24px;
 }
 
+.w-100p {
+    width: 100%;
+}
+.rot-180 {
+    transform: rotate(180deg);
+}
+
 .mt-40 {
     margin-top: 40px;
+}
+
+.mr-80 {
+    margin-right: 80px;
 }
 
 .bg-1 {
@@ -153,8 +173,9 @@ h3 {
     font-weight: bold;
 }
 
-/*Форма какой вариант подходит Вам {option_fits}:*/
 
+
+/*Форма какой вариант подходит Вам {option_fits}:*/
 .option_fits
 {
     padding: 0px;
@@ -191,6 +212,7 @@ h3 {
 }
 
 .option_fits-more-link {
+    font-size: 12px;
     color: #747474;
     font-style: italic;
 }
@@ -205,18 +227,17 @@ h3 {
     font-size: 14px;
     line-height: 25px;
     width: 568px;
+    font-style: normal;
 }
 
 .form_input {
+    height: 30px;
     width: 100%;
     margin-top: 39px;
     border: none;
     font-size: 14px;
     border-bottom: 1px solid #979797;
-}
-
-.form_input:focus {
-    border: none;
+    padding: 3px;
 }
 
 .form_submit {
@@ -245,8 +266,76 @@ h3 {
     font-size: 12px;
 }
 
+.option_fits-rotate_text {
+    writing-mode: tb-rl;
+}
+
+.option_fits-text_link {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.option_fits-text_link a {
+    margin-right: 22px;
+    color: #324B72;
+}
 
 /*Эксклюзивные объекты {exc_obj}:*/
+.exc_obj {
+    height: 1040px;
+    padding: 100px 120px;
+}
+
+.exc_obj > .container-fluid {
+    height: 100%;
+}
+
+.exc_obj-item {
+    height: 420px;
+    padding: 10px;
+}
+
+.exc_obj-item-img_block {
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.exc_obj-item-img_buttons {
+    position: absolute;
+    z-index: 1;
+    left: 1;
+    width: 100%;
+    text-align: left;
+}
+
+.exc_obj-item-img_buttons a {
+    display: inline-block;
+    margin-right: -3px;
+    color: white;
+    font-size: 11px;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+.exc_obj-item-img_block img {
+    height: 210px;
+}
+
+.exc_obj-item-more {
+    position: absolute;
+    padding: 10px;
+    left: 0;
+    top: 220px;
+}
+
+.exc_obj-item-bread, .exc_obj-item-bread a{
+    color: #747474;
+    font-size: 11px;
+    line-height: 15px;
+}
+
 
 /*Об аукционном доме {about_auc}:*/
 
