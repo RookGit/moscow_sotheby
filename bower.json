@@ -1,0 +1,17 @@
+{
+  "name": "moscow_sotheby",
+  "authors": [
+    "RookGit <rookcorp@yandex.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
